@@ -152,9 +152,23 @@ C<local>. In this case, we revert to the previous backtrace.)
 
 Steffen Mueller, C<smueller@cpan.org>
 
-=head1 COPYRIGHT
+=head1 ACKNOWLEDGMENT
 
- (C) 2010-2011 Booking.com  All rights reserved.
+This module was originally developed for booking.com.
+With approval from booking.com, this module was generalized
+and put on CPAN, for which the author would like to express
+his gratitude.
+
+=head1 COPYRIGHT AND LICENSE
+
+ (C) 2010-2011 Steffen Mueller. All rights reserved.
+ 
+ This code is available under the same license as Perl version
+ 5.8.1 or higher.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut
 
