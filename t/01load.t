@@ -1,4 +1,5 @@
-use Test::More tests => 2;
-BEGIN { use_ok('Devel::TrackSIG') };
-BEGIN { use_ok('Devel::TrackGlobalScalar') };
+use Test::More qw(no_plan);
+use Devel::TrackSIG;
+use Devel::TrackGlobalScalar '$|';
+ok(1);
 
