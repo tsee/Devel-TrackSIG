@@ -6,7 +6,7 @@ eval "use Carp::Heavy;";
 require Tie::Hash;
 our @ISA = qw(Tie::ExtraHash);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 tie %main::SIG => __PACKAGE__;
 
@@ -161,7 +161,7 @@ his gratitude.
 
 =head1 COPYRIGHT AND LICENSE
 
- (C) 2010-2011 Steffen Mueller. All rights reserved.
+ (C) 2010-2012 Steffen Mueller. All rights reserved.
  
  This code is available under the same license as Perl version
  5.8.1 or higher.
