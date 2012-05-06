@@ -6,7 +6,7 @@ eval "use Carp::Heavy;";
 require Tie::Scalar;
 our @ISA = qw(Tie::StdScalar);
 
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 
 our %opt = (
   track_source => 1,

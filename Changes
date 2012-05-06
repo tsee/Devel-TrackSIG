@@ -1,5 +1,8 @@
 Revision history for Perl extension Devel::TrackSIG.
 
+0.03  Sun May 06 14:45 2012
+  - Test fixes [Burak Gürsoy]
+
 0.02  Fri May 04 07:41 2012
   - Include Devel::TrackGlobalScalar
 

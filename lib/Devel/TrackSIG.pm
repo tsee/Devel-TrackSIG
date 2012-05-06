@@ -6,7 +6,7 @@ eval "use Carp::Heavy;";
 require Tie::Hash;
 our @ISA = qw(Tie::ExtraHash);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 tie %main::SIG => __PACKAGE__;
 
