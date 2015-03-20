@@ -6,7 +6,7 @@ eval "use Carp::Heavy;";
 require Tie::Hash;
 our @ISA = qw(Tie::ExtraHash);
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 tie %main::SIG => __PACKAGE__;
 
@@ -55,7 +55,7 @@ sub _report {
     while ( my @caller = caller $i++ ) {
       push @stack, sprintf '    %s::%s called at %s line %s', @caller[0,3,1,2];
     }
-    "${action}ing signal handler '$key' at" . join("\n", @stack );
+    "${action}ing signal handler '$key' at\n" . join("\n", @stack );
   };
 
   if ($opt{track_source}) {
