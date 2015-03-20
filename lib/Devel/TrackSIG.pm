@@ -49,7 +49,15 @@ sub _report {
 
   my $sources = $obj->[1];
 
-  my $msg = Carp::longmess("${action}ing signal handler '$key' at");
+  my $msg = do {
+    my $i;
+    my @stack;
+    while ( my @caller = caller $i++ ) {
+      push @stack, sprintf '    %s::%s called at %s line %s', @caller[0,3,1,2];
+    }
+    "${action}ing signal handler '$key' at" . join("\n", @stack );
+  };
+
   if ($opt{track_source}) {
     $sources->{$key} = $msg;
   }
